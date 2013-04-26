@@ -1,12 +1,12 @@
 Summary:	C++ wrappers for GooCanvas 2 library
 Summary(pl.UTF-8):	Interfejsy C++ dla biblioteki GooCanvas 2
 Name:		goocanvasmm2
-Version:	1.90.8
+Version:	1.90.9
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/goocanvasmm/1.90/goocanvasmm-%{version}.tar.xz
-# Source0-md5:	b5682f1dbea30e9444bf6d057c8a764e
+# Source0-md5:	f10ce3f1f97ee6906a741ef88c815215
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.9
 BuildRequires:	doxygen
