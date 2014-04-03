@@ -2,7 +2,7 @@ Summary:	C++ wrappers for GooCanvas 2 library
 Summary(pl.UTF-8):	Interfejsy C++ dla biblioteki GooCanvas 2
 Name:		goocanvasmm2
 Version:	1.90.9
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/goocanvasmm/1.90/goocanvasmm-%{version}.tar.xz
@@ -13,8 +13,8 @@ BuildRequires:	doxygen
 BuildRequires:	glibmm-devel >= 2.14.2
 BuildRequires:	goocanvas2-devel >= 2.0.1
 BuildRequires:	gtkmm3-devel >= 3.0.0
-BuildRequires:	mm-common >= 0.9.5
 BuildRequires:	libtool
+BuildRequires:	mm-common >= 0.9.5
 BuildRequires:	pkgconfig
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
@@ -60,6 +60,9 @@ Statyczna biblioteka goocanvasmm 2.
 Summary:	goocanvasmm 2 API documentation
 Summary(pl.UTF-8):	Dokumentacja API biblioteki goocanvasmm 2
 Group:		Documentation
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description apidocs
 API documentation for goocanvasmm 2 library.
@@ -82,7 +85,6 @@ Dokumentacja API biblioteki goocanvasmm 2.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
