@@ -1,26 +1,26 @@
 Summary:	C++ wrappers for GooCanvas 2 library
 Summary(pl.UTF-8):	Interfejsy C++ dla biblioteki GooCanvas 2
 Name:		goocanvasmm2
-Version:	1.90.9
-Release:	4
+Version:	1.90.11
+Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/goocanvasmm/1.90/goocanvasmm-%{version}.tar.xz
-# Source0-md5:	f10ce3f1f97ee6906a741ef88c815215
+# Source0-md5:	b2f34e67f550593e90199fd64eac243c
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.9
 BuildRequires:	doxygen
-BuildRequires:	glibmm-devel >= 2.14.2
+BuildRequires:	glibmm-devel >= 2.46.1
 BuildRequires:	goocanvas2-devel >= 2.0.1
-BuildRequires:	gtkmm3-devel >= 3.0.0
-BuildRequires:	libtool
+BuildRequires:	gtkmm3-devel >= 3.18.0
+BuildRequires:	libtool >= 2:1.5
 BuildRequires:	mm-common >= 0.9.5
 BuildRequires:	pkgconfig
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
-Requires:	glibmm >= 2.14.2
+Requires:	glibmm >= 2.46.1
 Requires:	goocanvas2 >= 2.0.1
-Requires:	gtkmm3 >= 3.0.0
+Requires:	gtkmm3 >= 3.18.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -34,9 +34,9 @@ Summary:	Header files for goocanvasmm 2 library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki goocanvasmm 2
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	glibmm-devel >= 2.14.2
+Requires:	glibmm-devel >= 2.46.1
 Requires:	goocanvas2-devel >= 2.0.1
-Requires:	gtkmm3-devel >= 3.0.0
+Requires:	gtkmm3-devel >= 3.18.0
 
 %description devel
 Header files for goocanvasmm 2 library.
