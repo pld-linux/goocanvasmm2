@@ -60,9 +60,7 @@ Statyczna biblioteka goocanvasmm 2.
 Summary:	goocanvasmm 2 API documentation
 Summary(pl.UTF-8):	Dokumentacja API biblioteki goocanvasmm 2
 Group:		Documentation
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description apidocs
 API documentation for goocanvasmm 2 library.
